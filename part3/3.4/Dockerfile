@@ -1,6 +1,5 @@
-FROM docker:cli
+FROM docker:20-git
 
 COPY . .
 
-ENTRYPOINT /bin/sh docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
-CMD ./script.sh
+ENTRYPOINT docker login -u $DOCKER_USER -p $DOCKER_PASSWORD && ./script.sh $0 $1
