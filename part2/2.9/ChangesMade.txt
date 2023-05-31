@@ -1,0 +1,2 @@
+Moved env variables (REQUEST_ORIGIN and REACT_APP_BACKEND_URL) from dockerfiles to docker-compose.yml,
+also changed them to reflect new URLs.
